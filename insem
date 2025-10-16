@@ -1,0 +1,19 @@
+git init
+git add .
+git commit -m "Initial commit for exam"
+git branch feature-login
+git checkout feature-login
+[Make changes to app.js, then:]
+git add app.js
+git commit -m "Added feature in app.js"
+git checkout main
+[Make changes to style.css, then:]
+git add style.css
+git commit -m "Updated style.css"
+git merge feature-login
+[Resolve conflicts if any, then:]
+git add .
+git commit -m "Resolved merge conflicts"
+git tag v1.0
+git remote add origin https://github.com/atifmubarak/2400031157-InsemExam.git
+git push -u origin main
